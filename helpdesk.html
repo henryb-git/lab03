@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Henry Bennett">
+    <meta name="author" content="Henry Bennett">
     <meta name="description" content="Book a help desk Appointment at an available time">
     <meta name="keywords" content="Help, Desk, Help Desk, CWA, CWA Help Desk, Make an appointment">
     <title>CWA Help Desk Appointment</title>
 </head>
-<body>
-    <form action="">
-        <img src="images/logo.png" alt="404 Error">
+<body>  
+    <form>
+        <a href="http://www.swin.edu.au"><img src="images/logo.png" alt="404 Error"></a> 
 
         <h1>CWA Help Desk Appointment</h1>
         <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
@@ -18,12 +18,12 @@
 
         <fieldset id="Student_ID_Form">
             <legend>Student_ID</legend>
-            <label for="Student ID">Student ID:</label>
+            <label for="Student_ID">Student ID:</label>
             <input type="text" id="Student_ID" name="Student ID" pattern="\d{7,10}" required="required">
             <br>
-            <label for="Given Name">Given Name:</label>
+            <label for="Given_Name">Given Name:</label>
             <input type="text" id="Given_Name" name="Given Name" maxlength="15" required="required">
-            <label for="Family Name">Family Name:</label>
+            <label for="Family_Name">Family Name:</label>
             <input type="text" id="Family_Name" name="Family Name" pattern="^[a-zA-Z]+" required="required">
         </fieldset>
 
@@ -39,7 +39,6 @@
             <label for="Tutor_Dropdown">Your tutor</label>
             <select name="Your Tutor" id="Tutor_Dropdown">
                 <option value="required">Please Select</option>
-                <option value="Ati">Ati</option>
                 <option value="Nicolás">Nicolás</option>
                 <option value="Rahul">Rahul</option>
                 <option value="Razeen">Razeen</option>
@@ -49,22 +48,22 @@
         <fieldset>
             <legend>Issue</legend>
                 <label for="HTML">HTML</label> 
-				<input type="checkbox" id="HTML" name="category[]" value="HTML" checked="checked"/>
+				<input type="checkbox" id="HTML" name="category[]" value="HTML" checked="checked">
 			
 			    <label for="CSS">CSS</label> 
-				<input type="checkbox" id="CSS" name="category[]" value="CSS"/>
+				<input type="checkbox" id="CSS" name="category[]" value="CSS">
 			
                 <label for="JavaScript">JavaScript</label> 
-				<input type="checkbox" id="JavaScript" name="category[]" value="JavaScript"/>
+				<input type="checkbox" id="JavaScript" name="category[]" value="JavaScript">
 
                 <label for="PHP">PHP</label> 
-				<input type="checkbox" id="PHP" name="category[]" value="PHP"/>
+				<input type="checkbox" id="PHP" name="category[]" value="PHP">
 
                 <label for="MySQL">MySQL</label> 
-				<input type="checkbox" id="MySQL" name="category[]" value="MySQL"/>
+				<input type="checkbox" id="MySQL" name="category[]" value="MySQL">
                 <br>
                 <br>
-                <label for="Issue Of Issue">Description of Issue</label>
+                <label for="Issue_Of_Issue">Description of Issue</label>
                 <textarea name="Issue Of Issue" id="Issue_Of_Issue"></textarea>
         </fieldset>
 
@@ -72,14 +71,14 @@
             <legend>Preferred Date/Time</legend>
 
             <label for="Date">Date</label>
-            <input type="date" name="Date" placeholder="dd-mm-yyyy" pattern="dd-mm-yyyy">
+            <input type="text" id="Date" name="Date" placeholder="dd-mm-yyyy" pattern="dd-mm-yyyy">
             <br>
             <label for="Time">Time</label>
-            <input type="text" name="Time" placeholder="00:00" pattern="\d{2}:\d{2}">
+            <input type="text" id="Time" name="Time" placeholder="00:00" pattern="\d{2}:\d{2}">
         </fieldset>
 
-        <input type= "submit" value="Register"/>
-	    <input type= "reset" value="Reset Form"/>
+        <input type= "submit" value="Register">
+	    <input type= "reset" value="Reset Form">
     </form>
 
 </body>
